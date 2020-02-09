@@ -104,7 +104,7 @@
       <p>This section defines the data model of LDT applications.</p>
       <section id="rest-syntax">
         <h3>REST</h3>
-        <p>In this section we define the abstract syntax REpresentational State Transfer. It sufficient to model a RESTful API independently of the transport protocol.</p>
+        <p>In this section we define the abstract syntax of REpresentational State Transfer. It is sufficient to model a RESTful API independently of the transport protocol.</p>
         <dl>
           <dt><dfn data-lt="token-Request" data-lt-noDefault>Request</dfn></dt>
           <dd>Request</dd>
@@ -143,8 +143,8 @@ Response := Status MediaType Body</p>
         </dl>
         <p class="grammar">LDRequest  := CRUDMethod IRI | CRUDMethod IRI RDFMediaType Dataset<br/>
 LDResponse := CRUDStatus RDFMediaType Dataset<br/>
-CRUDMethod  := <code>Append</code> | <code>Read</code> | <code>Delete</code> | <code>Update</code><br/>
-CRUDStatus  := <code>NotFound</code> | <code>NoContent</code> | <code>OK</code></p>
+CRUDMethod := Append | Read | Delete | Update<br/>
+CRUDStatus := NotFound | NoContent | OK</p>
       </section>
     </section>
     <section id="ldt-semantics" class="semantics">
